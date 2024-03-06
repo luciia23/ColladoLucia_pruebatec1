@@ -14,11 +14,5 @@ public class Console {
             System.out.println(e.toString());
         }
     }
-    
-    //Simulación de limpieza de consola
-    public static void clearConsole(){
-        for (int i = 0; i <= 50; i++){
-            System.out.println("");
-        }
-    }
+
 }

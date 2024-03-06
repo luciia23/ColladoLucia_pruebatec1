@@ -16,7 +16,7 @@ public class Controller {
     private Scanner sc = new Scanner(System.in);
     PersistenceController pController = new PersistenceController();
 
-    /**
+    /*
      * Agrega uno o más empleados a la base de datos. Muestra un menú para
      * agregar empleados y solicita la entrada del usuario. Verifica la entrada
      * y agrega el empleado a la base de datos.
