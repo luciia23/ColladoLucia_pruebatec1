@@ -1,0 +1,12 @@
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/logic/exceptions/EmployeeInvalidException.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/persistence/exceptions/NonexistentEntityException.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/logic/operations/ValidateEmployee.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/persistence/exceptions/IllegalOrphanException.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/persistence/PersistenceController.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/gui/Console.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/logic/Employee.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/persistence/EmployeeJpaController.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/persistence/exceptions/PreexistingEntityException.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/logic/Controller.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/gui/Constants.java
+/home/lucia/NetBeansProjects/PT1Empleados/src/main/java/com/pruebatec/pt1empleados/PT1Empleados.java
