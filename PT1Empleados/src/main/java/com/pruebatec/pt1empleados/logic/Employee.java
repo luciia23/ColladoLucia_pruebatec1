@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
+// Se utiliza @Column para especificar los nombres de los campos en español
 @Entity(name = "Empleado")
 @NamedQueries({
     @NamedQuery(name = "Employee.findAllActive", query = "SELECT e FROM Empleado e WHERE e.active = true"),

@@ -89,7 +89,7 @@ public class Controller {
                         Console.printError("Error: opción no válida. Introduce un número entre 1 y 6.");
                     }
                 } catch (InputMismatchException e) {
-                    System.out.println("Error: Debes ingresar un número entero.");
+                    Console.printError("Error: Debes ingresar un número entero.");
                     sc.nextLine();
                 } catch (NonexistentEntityException ex) {
                     System.out.println(ex.getMessage());
@@ -103,7 +103,7 @@ public class Controller {
 
     /*
     * Muestra todos los empleados activos que haya en la bbdd
-    */
+     */
     public void showEmployees() {
         List<Employee> listEmployee;
         try {
@@ -115,17 +115,19 @@ public class Controller {
         }
     }
 
-   /*
+    /*
     *   Elimina el empleado deseado
-    */
+     */
     public void deleteEmployee() {
         Employee e;
         boolean flag = true;
 
         while (flag) {
-            System.out.println("Ingrese el id:");
-            int id = sc.nextInt();
             try {
+                System.out.println("Ingrese el id:");
+                int id = sc.nextInt();
+                sc.nextLine(); // Limpiar el buffer del scanner
+
                 e = pController.findEmployeeById(id);
 
                 System.out.println("¿Seguro que quieres eliminarlo?(s/n)");
@@ -135,22 +137,25 @@ public class Controller {
                     pController.deleteEmployee(e);
                     System.out.println("Empleado con id " + id + " ha sido eliminado");
                 } else {
-                    System.out.println("La eliminación ha sido cancelada");;
+                    Console.printError("La eliminación ha sido cancelada");;
                 }
                 System.out.println("¿Quieres eliminar otro empleado? (s/n)");
                 String resp = sc.next();
                 if (resp.equalsIgnoreCase("n")) {
                     flag = false;
                 }
+            } catch (InputMismatchException ex) {
+                Console.printError("Debes ingresar un número entero para el ID.");
+                sc.nextLine();
             } catch (NonexistentEntityException ex) {
                 System.out.println(ex.getMessage());
             }
         }
     }
-    
+
     /*
     *   Muestra los empleados que haya con el cargo indicado
-    */
+     */
     public void findEmployeePosition() {
         System.out.println("¿Quieres ver todos los cargos que hay presentes en la bbdd?(s/n)");
         String resp = sc.next();
